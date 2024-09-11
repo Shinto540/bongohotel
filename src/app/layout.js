@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "./components/Header";
 
 export const metadata = {
   title: "Bongo Hotel",
@@ -9,9 +10,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body> 
+      <Header />      
         {children}
       </body>
     </html>
   );
 }
+ 
+
