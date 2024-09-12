@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.7",
+    "@heroicons/react": "^2.1.5",
+    "bongohotel": "file:",
     "init": "^0.1.2",
     "next": "14.2.9",
     "react": "^18",
