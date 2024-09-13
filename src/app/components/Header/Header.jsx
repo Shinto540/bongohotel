@@ -49,8 +49,8 @@ export default function Example() {
             <div className="md:flex hidden">
               <a className="block md:text-white mr-4" href="#">Browse Hotels</a>
               <a className="block md:text-white mr-4" href="#">Best Hotels</a>
-              <a className="block md:text-white mr-4" href="#">Contact Us</a>
-              <a className="block md:text-white mr-4" href="#">About Us</a>
+              <a className="block md:text-white mr-4" href="../../contacts">Contact Us</a>
+              <a className="block md:text-white mr-4" href="../../about/">About Us</a>
             </div>
             <div className="flex text-sm">
               <a className="p-2 ml-2 bg-white text-teal-500 font-semibold leading-none border border-gray-100 rounded hover:border-transparent hover:bg-gray-100" href="#">Login</a>
