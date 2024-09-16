@@ -1,10 +1,10 @@
 import Image from "next/image";
-
+import trending, { trending_data } from "./data/trending"
 
 
 export default function Home() {
   return (
-    <div className=" flex items-center">
+    <div className="flex flex-col items-center space-y-4">
     <section 
       className="bg-cover bg-center py-10 w-full" 
       style={{ backgroundImage: "url(/assets/pictures/homebg.jpg)" }}
@@ -36,10 +36,37 @@ export default function Home() {
         </div>
       </div>
     </section>
-<div>
-  
-</div>
 
+    <section className="m-4 mt-0 -mb-14 px-2 lg:px-4">SearchForm
+
+     
+</section>
+    <section className="mx-auto max-w-7xl p-6 bg-white rounded-t-lg">
+      <div className="pt-5">
+        <h3 className="text-xl font-bpld">Trending Destinations</h3>
+        <p className="font-light">
+          Most popular choices for travellers from around the city
+        </p>
+      </div>
+<div className="flex space-x-4 py-5 overflow-x-scroll">
+{trending_data.map((item)=> (
+  <div key={item.id} className="space-y-1 shrink-0 cursor-pointer">
+    <Image
+    key={item.id}
+    className="w-80 h-72 object-cover rounded-lg pb-2"
+    src={item.src}
+    alt=""
+    width={80}
+    height={72}
+    />
+    <p className="font-bold">{item.title}</p>
+    <p className="">{item.location}</p>
+    <p className="font-light text-sm">{item.description}</p>
+    </div>
+))}
+</div>
+    </section>
+     
   </div>
   );
 }
