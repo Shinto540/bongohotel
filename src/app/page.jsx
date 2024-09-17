@@ -4,7 +4,7 @@ import trending, { trending_data } from "./data/trending"
 import SearchForm from "../app/components/SearchForm/searchForm"
 import HomeCarousel from "../app/components/HomeCarousel/homeCarousel"
 import Discount from "../app/components/Discount/discount"
-
+import HotelsByTypeComponent from "./components/FilterTypes/HotelsByTypeComponent"
 
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
             </p>
             <a 
               href="#" 
-              className="bg-indigo-500 text-white py-4 px-12 rounded-full hover:bg-indigo-600"
+              className="bg-indigo-500 text-white py-4 px-12 font-bold rounded-full hover:bg-indigo-600"
             >
               Demo
             </a>
@@ -43,11 +43,9 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="m-4 mt-0 -mb-14 px-2 lg:px-4">
+    <section className="m-4 mt-0 -mb-14 px-2 lg:px-4 mx-auto max-w-full p-6 bg-white rounded-t-lg">
       <SearchForm />
-
-     
-</section>
+     </section>
 
 <section>
 {/* <div className="w-full h-screen bg-gray-100 flex items-center justify-center">
@@ -58,12 +56,12 @@ export default function Home() {
         </p>
       </div>
     </div> */}
-  Section 2
+  
 </section>
 
     <section className="mx-auto max-w-full p-6 bg-white rounded-t-lg">
       <div className="pt-5">
-        <h3 className="text-xl font-bpld">Trending Destinations</h3>
+        <h3 className="text-xl font-bold">Trending Destinations</h3>
         <p className="font-light">
           Most popular choices for travellers from around the city
         </p>
@@ -89,6 +87,9 @@ export default function Home() {
 
     <section>
       <Discount />
+    </section>
+    <section>
+      <HotelsByTypeComponent />
     </section>
      
   </div>

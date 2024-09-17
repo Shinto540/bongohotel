@@ -44,11 +44,12 @@ const HotelListComponent = () => {
       oldPrice: '221,757',
       newPrice: '188,506',
     },
+   
   ];
 
   return (
     <div className="bg-gray-100 p-4 max-w-full">
-      <h1 className="text-2xl font-bold mb-4">Hotel List</h1>
+       <h3 className="text-xl font-bpld">Discounted Destinations</h3>
       <div className="max-w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {hotels.map(hotel => (
           <div key={hotel.id} className="bg-white shadow-md rounded-lg overflow-hidden">
@@ -58,8 +59,8 @@ const HotelListComponent = () => {
     className="w-80 h-72 object-cover rounded-lg pb-2"
     src={hotel.image}
     alt=""
-    width={60}
-    height={60}
+    width={300}
+    height={300}
     />
             <div className="p-4">
               <h2 className="text-xl font-semibold">{hotel.name}</h2>
