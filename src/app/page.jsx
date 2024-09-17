@@ -1,13 +1,18 @@
+'use client'
 import Image from "next/image";
 import trending, { trending_data } from "./data/trending"
+import SearchForm from "../app/components/SearchForm/searchForm"
+import HomeCarousel from "../app/components/HomeCarousel/homeCarousel"
+import Discount from "../app/components/Discount/discount"
+
 
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center space-y-4">
     <section 
-      className="bg-cover bg-center py-10 w-full" 
-      style={{ backgroundImage: "url(/assets/pictures/homebg.jpg)" }}
+      className="bg-cover bg-blue-800 bg-center py-10 w-full" 
+      // style={{ backgroundImage: "url(/assets/pictures/homebg.jpg)" }}
     >
       <div className="container mx-auto text-left text-white">
         <div className="flex items-center">
@@ -25,23 +30,38 @@ export default function Home() {
             </a>
           </div>
           <div className="w-1/2 pl-16">
-          <Image 
+          {/* <Image 
           src="/assets/pictures/homepic.jpg" // replace with your image path
           alt="Description of image"
           width={1000}
           height={1000}
           className="object-cover" // To control how the image is resized
-        />
+        /> */}
+        <HomeCarousel />
           </div>
         </div>
       </div>
     </section>
 
-    <section className="m-4 mt-0 -mb-14 px-2 lg:px-4">SearchForm
+    <section className="m-4 mt-0 -mb-14 px-2 lg:px-4">
+      <SearchForm />
 
      
 </section>
-    <section className="mx-auto max-w-7xl p-6 bg-white rounded-t-lg">
+
+<section>
+{/* <div className="w-full h-screen bg-gray-100 flex items-center justify-center">
+      <div className="w-full max-w-screen-md p-4 bg-white shadow-lg rounded-lg">
+        <h1 className="text-2xl font-bold mb-4">Full Screen Container</h1>
+        <p className="text-gray-700">
+          This div takes up the full height andjnfdsgsdfgoekgoe,geor,giermgieig,necuerngcuienrgvcermirigfrjgierjvg rigvjierjgier herigjier gheug eieer erj te width of the viewport, with responsiveness for smaller screens.
+        </p>
+      </div>
+    </div> */}
+  Section 2
+</section>
+
+    <section className="mx-auto max-w-full p-6 bg-white rounded-t-lg">
       <div className="pt-5">
         <h3 className="text-xl font-bpld">Trending Destinations</h3>
         <p className="font-light">
@@ -65,6 +85,10 @@ export default function Home() {
     </div>
 ))}
 </div>
+    </section>
+
+    <section>
+      <Discount />
     </section>
      
   </div>

@@ -25,7 +25,7 @@ export default function Example() {
   return (
     <header className="">
   
-        <nav className="md:flex justify-between w-full bg-blue-800 text-white p-4 sticky">
+        <nav className="md:flex justify-between w-full bg-blue-800 text-white p-4 ">
           <div>
           <div className="flex items-center space-x-4 p-4">
       {/* Left side: Image */}
