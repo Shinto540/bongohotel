@@ -5,7 +5,7 @@ import Image from "next/image";
 const images = [
   "/assets/pictures/homepic.jpg",
   "/assets/pictures/about.png",
-  "/assets/pictures/homepic.logo.png", // Add as many images as you want here
+  "/assets/pictures/homebg.jpg", // Add as many images as you want here
 ];
 
 const Carousel = () => {
@@ -36,6 +36,7 @@ const Carousel = () => {
             layout="fill"
             objectFit="cover"
             className="rounded-md"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
       ))}
