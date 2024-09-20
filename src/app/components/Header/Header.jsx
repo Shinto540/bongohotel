@@ -47,10 +47,25 @@ export default function Example() {
           </div>
           <div className="md:items-center md:w-auto flex">
             <div className="md:flex hidden">
-              <a className="block md:text-white mr-4" href="#">Browse Hotels</a>
-              <a className="block md:text-white mr-4" href="#">Best Hotels</a>
-              <a className="block md:text-white mr-4" href="../../contacts">Contact Us</a>
-              <a className="block md:text-white mr-4" href="../../about/">About Us</a>
+              <a
+            href=""
+            className="text-white px-4 py-2 hover:underline hover:animate-ping cursor-pointer scroll-smooth"
+          >
+            Browse Hotels
+          </a>
+              <a
+            href=""
+            className="text-white px-4 py-2 hover:underline hover:animate-ping cursor-pointer scroll-smooth"
+          >
+            Best Deals
+          </a>
+          <a
+            href="#target-section"
+            className="text-white px-4 py-2 hover:underline hover:animate-ping cursor-pointer scroll-smooth block md:text-white mr-4"
+          >
+            About|Contacts
+          </a>
+        
             </div>
             <div className="flex text-sm">
               <a className="p-2 ml-2 bg-white text-teal-500 font-semibold leading-none border border-gray-100 rounded hover:border-transparent hover:bg-gray-100" href="#">Login</a>

@@ -1,11 +1,11 @@
 import Image from "next/image";
 import PageHeader from "../components/PageHeader/pageheader";
 
-const about = () => {
+const browseHotels = () => {
   return (
     <>
       <main className="bg-gray-100 pb-16">
-        <PageHeader pageTitle={"About us"} />
+        <PageHeader pageTitle={"Browse Hotels"} />
 
         <section className="top-[10%] grid grid-cols-2 w-[90%] mt-16 mx-auto py-12 px-[60px] bg-white"
         >
@@ -53,4 +53,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default browseHotels;

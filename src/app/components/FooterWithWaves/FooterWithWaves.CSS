@@ -5,6 +5,10 @@
     height: 10vh;
   }
   
+  .footer {
+    height: 200px; /* Adjust height as needed */
+    background: linear-gradient(to top, #000, transparent); /* Fade from black to transparent */
+  }
   .parallax > use {
     animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
   }
