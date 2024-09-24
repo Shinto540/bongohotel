@@ -1,15 +1,15 @@
 import Image from "next/image";
-import HotelOverview from "../components/HotelOverview/hotelOverview"
-import PhotoGallery from "../components/PhotoGallery/photoGallery"
-import RoomTypesAndPrices from "../components/RoomTypesAndPrices/roomTypesAndPrice";
-import Amenities from "../components/Amenities/amenities";
-import Reviews from "../components/Reviews/review";
-import LocationAndMap from "../components/Reviews/review"
-import BookingForm from "../components/BookingForm/bookingForm"
-import Policies from "../components/Policies/policies";
-import PageHeader from "../components/PageHeader/pageheader";
-import FAQs from "../components/FAQ/faq";
-import SpecialOffers from "../components/SpecialOffers/specialOffers";
+import HotelOverview from "../../components/HotelOverview/hotelOverview"
+import PhotoGallery from "../../components/PhotoGallery/photoGallery"
+import RoomTypesAndPrices from "../../components/RoomTypesAndPrices/roomTypesAndPrice";
+import Amenities from "../../components/Amenities/amenities";
+import Reviews from "../../components/Reviews/review";
+import LocationAndMap from "../../components/Reviews/review"
+import BookingForm from "../../components/BookingForm/bookingForm"
+import Policies from "../../components/Policies/policies";
+import PageHeader from "../../components/PageHeader/pageheader";
+import FAQs from "../../components/FAQ/faq";
+import SpecialOffers from "../../components/SpecialOffers/specialOffers";
 
 
 

@@ -1,8 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import FooterWithWaves from "./components/FooterWithWaves/footerWithWaves";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import FooterWithWaves from "../components/FooterWithWaves/footerWithWaves";
 
 export const metadata = {
   title: "Bongo Hotel",

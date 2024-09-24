@@ -1,5 +1,5 @@
 import Image from "next/image";
-import PageHeader from "../components/PageHeader/pageheader";
+import PageHeader from "../../components/PageHeader/pageheader";
 
 const browseHotels = () => {
   return (

@@ -33,7 +33,7 @@ const Carousel = () => {
           <Image
             src={src}
             alt={`Slide ${index + 1}`}
-            layout="fill"
+            fill={true}
             objectFit="cover"
             className="rounded-md"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

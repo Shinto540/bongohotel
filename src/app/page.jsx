@@ -1,10 +1,11 @@
 'use client'
 import Image from "next/image";
 import trending, { trending_data } from "./data/trending"
-import SearchForm from "../app/components/SearchForm/searchForm"
-import HomeCarousel from "../app/components/HomeCarousel/homeCarousel"
-import Discount from "../app/components/Discount/discount"
-import HotelsByTypeComponent from "./components/FilterTypes/HotelsByTypeComponent"
+import SearchForm from "../components/SearchForm/searchForm"
+import HomeCarousel from "../components/HomeCarousel/homeCarousel"
+import Discount from "../components/Discount/discount"
+import HotelsByTypeComponent from "../components/FilterTypes/HotelsByTypeComponent"
+import Shadform from "../components/ShadForm/shadform";
 
 
 export default function Home() {
@@ -43,10 +44,12 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="m-4 mt-0 -mb-14 px-2 lg:px-4 mx-auto max-w-full p-6 bg-white rounded-t-lg">
+    {/* <section className="m-4 mt-0 -mb-14 px-2 lg:px-4 mx-auto max-w-full p-6 bg-white rounded-t-lg">
       <SearchForm />
-     </section>
-
+     </section> */}
+<section>
+  {/* <Shadform /> */}
+</section>
 <section>
 {/* <div className="w-full h-screen bg-gray-100 flex items-center justify-center">
       <div className="w-full max-w-screen-md p-4 bg-white shadow-lg rounded-lg">
